@@ -55,8 +55,6 @@ export function handleSidebar() {
   const darkModeToggle = document.getElementById("dark-mode-toggle");
   const userProfile = document.querySelector(".user-profile");
 
-  // checks
-
   if (
     !collapseBtn ||
     !navItems.length ||
@@ -69,7 +67,7 @@ export function handleSidebar() {
     return; // Exit if any required elements are not found
   }
 
-  collapseBtn.addEventListener("click", () =>
+  collapseBtn.addEventListener("click", () => {
     toggleSidebar(
       sidebar,
       navItems,
@@ -77,8 +75,10 @@ export function handleSidebar() {
       notificationBadge,
       darkModeToggle,
       userProfile
-    )
-  );
+    );
+
+    toggleCollapseIcon(sidebar);
+  });
 }
 
 function toggleSidebar(
@@ -90,13 +90,33 @@ function toggleSidebar(
   userProfile
 ) {
   sidebar.classList.toggle("collapsed");
-  console.log(sidebar.classList);
+
   updateIcons(sidebar, navItems);
   toggleLogo(sidebar, logo);
   toggleNotificationBadge(sidebar, notificationBadge);
   toggleDarkModeToggle(sidebar, darkModeToggle);
   toggleUserProfile(sidebar, userProfile);
-  // resetSidebar();
+}
+
+function toggleCollapseIcon(sidebar) {
+  const collapseBtn = document.querySelector("#collapse-btn");
+  const expandedIcon = collapseBtn.querySelector(".expanded-icon");
+  const collapsedIcon = collapseBtn.querySelector(".collapsed-icon");
+  const collapseText = collapseBtn.querySelector(".nav-text");
+
+  if (collapseBtn && expandedIcon && collapsedIcon && collapseText) {
+    if (sidebar.classList.contains("collapsed")) {
+      expandedIcon.style.display = "none";
+      collapsedIcon.style.display = "inline-block";
+      collapseText.style.display = "none"; // Hide collapse text
+    } else {
+      expandedIcon.style.display = "inline-block";
+      collapsedIcon.style.display = "none";
+      collapseText.style.display = "inline-block"; // Show collapse text
+    }
+  } else {
+    console.error("Collapse button or icons not found");
+  }
 }
 
 function toggleLogo(sidebar, logo) {
