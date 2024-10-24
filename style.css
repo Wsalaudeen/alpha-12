@@ -73,6 +73,7 @@ button {
   margin: 0;
   font: inherit;
   cursor: pointer;
+  border: none;
 }
 
 button:hover,
