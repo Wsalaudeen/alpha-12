@@ -206,10 +206,3 @@ export function handleSort() {
     });
   });
 }
-
-export function handleRow() {
-  const rowsSelect = document.querySelector(".rows-select");
-  rowsSelect.addEventListener("change", (e) => {
-    console.log(`Changed to ${e.target.value}`);
-  });
-}

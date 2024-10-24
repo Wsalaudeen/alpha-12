@@ -5,7 +5,6 @@ import {
   imageSlider,
   handleSearch,
   handleSort,
-  handleRow,
 } from "./utils";
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -3,7 +3,6 @@ export {
   imageSlider,
   handleSearch,
   handleSort,
-  handleRow,
 } from "./monthlychart";
 
 // function to handle keyboard navigation
