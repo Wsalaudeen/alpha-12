@@ -1,3 +1,11 @@
+export {
+  createMonthlyChart,
+  imageSlider,
+  handleSearch,
+  handleSort,
+  handleRow,
+} from "./monthlychart";
+
 // function to handle keyboard navigation
 export function handleKeyboardNavigation(e) {
   const navItems = document.querySelectorAll(".nav-item");

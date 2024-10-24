@@ -16,9 +16,15 @@
       <div class="logo" role="banner" aria-label="company logo">
         <h1 class="logo-text">Full Logo</h1>
       </div>
+      <!-- hamburger -->
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
       <!-- main sidbar navigation -->
-      <nav aria-label="sidebar navigation" class="navigation">
+      <nav aria-label="sidebar navigation" class="nav-links">
         <ul>
           <!-- home navigation item -->
           <li>
@@ -432,8 +438,8 @@
           </li>
 
           <li>
-            <a href="#" class="nav-item" id="dark-mode-toggle">
-              <!-- collapsed icon -->
+            <!-- collapsed icon -->
+            <button type="button" id="dark-mode-toggle" class="toggle-theme">
               <svg
                 class="toggle-dark"
                 width="24"
@@ -446,7 +452,7 @@
                 <rect x="2" y="2" width="12" height="12" rx="6" fill="white" />
               </svg>
               <span class="nav-text">Dark Mode</span>
-            </a>
+            </button>
           </li>
 
           <li>
@@ -483,7 +489,543 @@
       </nav>
     </header>
     <main>
-      <!-- main content area -->
+      <section class="mx-container py-8 my-8">
+        <h2 id="metrics-heading">Welcome! here’s your summary</h2>
+        <article class="metrics-card-container">
+          <article class="metric-card">
+            <header class="metric-header">
+              <h3>Total Events</h3>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M8 8.66666V9.99999"
+                  stroke="#64748B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.33333 5.99999C8.33333 6.18409 8.1841 6.33332 8 6.33332C7.81591 6.33332 7.66667 6.18409 7.66667 5.99999C7.66667 5.81589 7.81591 5.66666 8 5.66666C8.1841 5.66666 8.33333 5.81589 8.33333 5.99999Z"
+                  stroke="#64748B"
+                />
+                <path
+                  d="M12.8333 7.99999C12.8333 10.6694 10.6694 12.8333 8 12.8333C5.33062 12.8333 3.16667 10.6694 3.16667 7.99999C3.16667 5.33061 5.33062 3.16666 8 3.16666C10.6694 3.16666 12.8333 5.33061 12.8333 7.99999Z"
+                  stroke="#64748B"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </header>
+            <div class="metric-value">
+              100,000
+              <span class="trend-indicator trend-positive">
+                <span class="trend-arrow">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M11.5 10.1667V4.5H5.83333M11.3333 4.66667L4.5 11.5"
+                      stroke="#10B981"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                5.0%
+              </span>
+            </div>
+          </article>
+          <article class="metric-card">
+            <header class="metric-header">
+              <h3>Active Speakers</h3>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 8.66666V9.99999"
+                  stroke="#64748B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.33333 5.99999C8.33333 6.18409 8.1841 6.33332 8 6.33332C7.81591 6.33332 7.66667 6.18409 7.66667 5.99999C7.66667 5.81589 7.81591 5.66666 8 5.66666C8.1841 5.66666 8.33333 5.81589 8.33333 5.99999Z"
+                  stroke="#64748B"
+                />
+                <path
+                  d="M12.8333 7.99999C12.8333 10.6694 10.6694 12.8333 8 12.8333C5.33062 12.8333 3.16667 10.6694 3.16667 7.99999C3.16667 5.33061 5.33062 3.16666 8 3.16666C10.6694 3.16666 12.8333 5.33061 12.8333 7.99999Z"
+                  stroke="#64748B"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </header>
+            <div class="metric-value">
+              25
+              <span class="trend-indicator trend-negative">
+                <span class="trend-arrow">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M11.5 5.83333V11.5H5.83333M11.3333 11.3333L4.5 4.5"
+                      stroke="#F43F5E"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                5.0%
+              </span>
+            </div>
+          </article>
+          <article class="metric-card">
+            <header class="metric-header">
+              <h3>Total Registration</h3>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M8 8.66666V9.99999"
+                  stroke="#64748B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.33333 5.99999C8.33333 6.18409 8.1841 6.33332 8 6.33332C7.81591 6.33332 7.66667 6.18409 7.66667 5.99999C7.66667 5.81589 7.81591 5.66666 8 5.66666C8.1841 5.66666 8.33333 5.81589 8.33333 5.99999Z"
+                  stroke="#64748B"
+                />
+                <path
+                  d="M12.8333 7.99999C12.8333 10.6694 10.6694 12.8333 8 12.8333C5.33062 12.8333 3.16667 10.6694 3.16667 7.99999C3.16667 5.33061 5.33062 3.16666 8 3.16666C10.6694 3.16666 12.8333 5.33061 12.8333 7.99999Z"
+                  stroke="#64748B"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </header>
+            <div class="metric-value">
+              300
+              <span class="trend-indicator trend-positive">
+                <span class="trend-arrow">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M11.5 10.1667V4.5H5.83333M11.3333 4.66667L4.5 11.5"
+                      stroke="#10B981"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                5.0%
+              </span>
+            </div>
+          </article>
+          <article class="metric-card">
+            <header class="metric-header">
+              <h3>Total Revenue</h3>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M8 8.66666V9.99999"
+                  stroke="#64748B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.33333 5.99999C8.33333 6.18409 8.1841 6.33332 8 6.33332C7.81591 6.33332 7.66667 6.18409 7.66667 5.99999C7.66667 5.81589 7.81591 5.66666 8 5.66666C8.1841 5.66666 8.33333 5.81589 8.33333 5.99999Z"
+                  stroke="#64748B"
+                />
+                <path
+                  d="M12.8333 7.99999C12.8333 10.6694 10.6694 12.8333 8 12.8333C5.33062 12.8333 3.16667 10.6694 3.16667 7.99999C3.16667 5.33061 5.33062 3.16666 8 3.16666C10.6694 3.16666 12.8333 5.33061 12.8333 7.99999Z"
+                  stroke="#64748B"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </header>
+            <div class="metric-value">
+              $500,000
+              <span class="trend-indicator trend-positive">
+                <span class="trend-arrow">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M11.5 10.1667V4.5H5.83333M11.3333 4.66667L4.5 11.5"
+                      stroke="#10B981"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                5.0%
+              </span>
+            </div>
+          </article>
+        </article>
+      </section>
+      <section class="mx-container py-8 my-8">
+        <h2 class="event-heading">Event Registrations per month</h2>
+        <article class="events-card-container">
+          <article class="event-chart-container">
+            <canvas id="monthly-chart"></canvas>
+          </article>
+          <article class="event-image-container">
+            <article class="slider-container">
+              <article class="slider">
+                <article class="slide">
+                  <img src="./slide-1.jpg" alt="image slide 1" />
+                  <div class="slide-content">
+                    <h3>Latest News & Updates</h3>
+                    <p>
+                      Turpis interdum nunc varius ornare dignissim pretium.
+                      Massa ornare quis aliquet sed vitae. Sed velit nisi,
+                      fermentum erat. Fringilla purus, erat fringilla tincidunt
+                      quisque non. Pellentesque in ut tellus.
+                    </p>
+                  </div>
+                </article>
+                <article class="slide">
+                  <img src="./slide-2.jpg" alt="image slide 2" />
+                  <div class="slide-content">
+                    <h3>Latest News & Updates</h3>
+                    <p>
+                      Turpis interdum nunc varius ornare dignissim pretium.
+                      Massa ornare quis aliquet sed vitae. Sed velit nisi,
+                      fermentum erat. Fringilla purus, erat fringilla tincidunt
+                      quisque non. Pellentesque in ut tellus.
+                    </p>
+                  </div>
+                </article>
+                <article class="slide">
+                  <img src="./slide-3.jpg" alt="image slide 3" />
+                  <div class="slide-content">
+                    <h3>Latest News & Updates</h3>
+                    <p>
+                      Turpis interdum nunc varius ornare dignissim pretium.
+                      Massa ornare quis aliquet sed vitae. Sed velit nisi,
+                      fermentum erat. Fringilla purus, erat fringilla tincidunt
+                      quisque non. Pellentesque in ut tellus.
+                    </p>
+                  </div>
+                </article>
+              </article>
+              <button
+                class="nav-button prev"
+                aria-label="Previous slide"
+              ></button>
+              <button class="nav-button next" aria-label="Next slide"></button>
+              <div class="dots"></div>
+            </article>
+          </article>
+        </article>
+      </section>
+      <section class="mx-container py-8 my-8 table-container">
+        <h2 class="table-heading">Events History</h2>
+        <div class="table-header">
+          <div class="search-section">
+            <div class="search-box">
+              <input type="text" placeholder="Search..." />
+            </div>
+          </div>
+          <div class="filter-section">
+            <div type="button" class="filter-button">
+              Date
+              <span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.1667 7.16666L8 9.5L5.83334 7.16666"
+                    stroke="#334155"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div type="button" class="filter-button">
+              Status
+              <span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.1667 7.16666L8 9.5L5.83334 7.16666"
+                    stroke="#334155"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div type="button" class="filter-button">
+              Name
+              <span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.1667 7.16666L8 9.5L5.83334 7.16666"
+                    stroke="#334155"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </div>
+            <span class="results-count">Displaying 100 results</span>
+          </div>
+          <div class="sort-section">
+            <span>Sort:</span>
+            <div type="button" class="filter-button">
+              Most Recent
+              <span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.1667 7.16666L8 9.5L5.83334 7.16666"
+                    stroke="#334155"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div class="filter-button">⋮</div>
+            <div class="filter-button">Export</div>
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Event Name</th>
+              <th>Date</th>
+              <th>Speaker</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cloud Innovation Summit</td>
+              <td>2024-10-15</td>
+              <td>Jane Doe</td>
+              <td>
+                <span class="status-badge status-completed">Completed</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Blockchain Revolution Conference</td>
+              <td>2024-11-08</td>
+              <td>Dr. Peter Smith</td>
+              <td>
+                <span class="status-badge status-in-progress">In Progress</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Al in Helathcare symposium</td>
+              <td>2023-22-04</td>
+              <td>Dr. Aisha Malik</td>
+              <td>
+                <span class="status-badge status-completed">completed</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Future of Fintech</td>
+              <td>2024-12-14</td>
+              <td>John lee</td>
+              <td>
+                <span class="status-badge status-completed">completed</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Data Analytics in Business</td>
+              <td>2021-01-09</td>
+              <td>Racheal Moore</td>
+              <td>
+                <span class="status-badge status-completed">completed</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Sustainable energy expos</td>
+              <td>2020-03-26</td>
+              <td>Dr.Salauden w.o</td>
+              <td>
+                <span class="status-badge status-completed">completed</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Web3 interface workshop</td>
+              <td>2023-09-26</td>
+              <td>Kevins Adams</td>
+              <td>
+                <span class="status-badge status-in-progress">In Progress</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Blockchain Revolution Conference</td>
+              <td>2022-06-05</td>
+              <td>Dr. Peter Smith</td>
+              <td>
+                <span class="status-badge status-in-progress">In Progress</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Cybersecurity in Startups</td>
+              <td>2024-11-19</td>
+              <td>Emily Zhang</td>
+              <td>
+                <span class="status-badge status-completed">completed</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Smart cities forum</td>
+              <td>2024-10-18</td>
+              <td>Dr.Maria Hanadez</td>
+              <td>
+                <span class="status-badge status-in-progress">In Progress</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="pagination">
+          <div class="page-numbers">
+            <div role="button" class="page-button page-button-left">
+              <span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.0417 7.29169L8.125 10L11.0417 12.7084"
+                    stroke="#64748B"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div role="button" class="page-button-numbers active">1</div>
+            <div role="button" class="page-button-numbers">2</div>
+            <div role="button" class="page-button-numbers">3</div>
+            <div role="button" class="page-button">
+              <span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.95833 7.29169L11.875 10L8.95833 12.7084"
+                    stroke="#334155"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="rows-per-page">
+            <span>Show:</span>
+            <select class="rows-select">
+              <option>10 rows</option>
+              <option>20 rows</option>
+              <option>50 rows</option>
+              <option>100 rows</option>
+            </select>
+          </div>
+        </div>
+      </section>
     </main>
     <script type="module" src="./Js/main.js"></script>
   </body>
