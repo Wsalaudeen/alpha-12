@@ -123,10 +123,6 @@ export function createMonthlyChart() {
 export function themeToggle() {
   const body = document.querySelector("body"),
     toggleBall = document.querySelector(".toggle-ball");
-  let getMode = localStorage.getItem("mode");
-  if (getMode === "dark") {
-    body.classList.toggle.add("dark");
-  }
   toggleBall.addEventListener("click", () => {
     body.classList.toggle("dark");
     if (!body.classList.contains("dark")) {
