@@ -120,17 +120,20 @@ export function createMonthlyChart() {
   return new Chart(ctx, config);
 }
 
-function updateChartColors(isDarkMode) {
-  const xAxisColor = isDarkMode ? "#64748b" : "#fffff";
-  const yAxisColor = isDarkMode ? "#64748b" : "#fffff";
-  const gridColor = isDarkMode ? "#64748b" : "#fffff";
-
-  createMonthlyChart.options.scales.x.ticks.color = xAxisColor;
-  createMonthlyChart.options.scales.y.ticks.color = yAxisColor;
-  createMonthlyChart.options.scales.x.grid.color = gridColor;
-  createMonthlyChart.options.scales.y.grid.color = gridColor;
-
-  createMonthlyChart.update();
+export function themeToggle() {
+  const body = document.querySelector("body"),
+    toggleBall = document.querySelector(".toggle-ball");
+  let getMode = localStorage.getItem("mode");
+  if (getMode === "dark") {
+    body.classList.toggle.add("dark");
+  }
+  toggleBall.addEventListener("click", () => {
+    body.classList.toggle("dark");
+    if (!body.classList.contains("dark")) {
+      return localStorage.setItem("mode", "light");
+    }
+    localStorage.setItem("mode", "dark");
+  });
 }
 
 export function imageSlider() {

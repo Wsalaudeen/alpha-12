@@ -3,6 +3,7 @@ export {
   imageSlider,
   handleSearch,
   handleSort,
+  themeToggle,
 } from "./monthlychart";
 
 // function to handle keyboard navigation
@@ -46,10 +47,10 @@ export function handleKeyboardNavigation(e) {
 }
 
 //  Event listener to the navigation
-export function updateFocus() {
-  const navContainer = document.querySelector(".navigation");
-  navContainer.addEventListener("keydown", handleKeyboardNavigation);
-}
+// export function updateFocus() {
+//   const navContainer = document.querySelector(".navigation");
+//   navContainer.addEventListener("keydown", handleKeyboardNavigation);
+// }
 
 // funtion to handle sidebar functionality
 

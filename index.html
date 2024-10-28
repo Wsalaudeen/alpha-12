@@ -10,7 +10,7 @@
       Event Management Dashboard - Plan, Track, and Manage Events Efficiently
     </title>
   </head>
-  <body>
+  <body class="dark">
     <header class="sidebar" id="sidebar" aria-label="sidebar">
       <!-- company logo section -->
       <div class="logo" role="banner" aria-label="company logo">
@@ -446,18 +446,10 @@
           id="dark-mode-toggle"
           class="toggle-theme btn-border"
         >
-          <svg
-            class="toggle-dark"
-            width="24"
-            height="16"
-            viewBox="0 0 24 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect width="24" height="16" rx="8" fill="#E2E8F0" />
-            <rect x="2" y="2" width="12" height="12" rx="6" fill="white" />
-          </svg>
-          <span>Dark mode</span>
+          <span class="toggle-ball-container">
+            <span class="toggle-ball"></span>
+          </span>
+          <span class="toggle-text">Dark mode</span>
         </button>
       </div>
 
@@ -594,7 +586,7 @@
                     />
                   </svg>
                 </span>
-                -5.0%
+                5.0%
               </span>
             </div>
           </article>

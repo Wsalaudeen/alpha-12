@@ -77,8 +77,61 @@ svg {
   justify-content: center;
 }
 
-.toggle-container button span {
+.toggle-theme {
+  display: flex;
+  align-items: center;
+  /* background-color: #e0e0e0; */
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-ball-container {
+  display: inline-block;
+  width: 30px;
+  height: 15px;
+  background-color: #e2e8f0;
+  border-radius: 15px;
+  position: relative;
+  margin-right: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-ball {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+.toggle-text {
   margin-inline-start: 0.1rem;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+body.dark .toggle-theme {
+  /* background-color: #333; */
+}
+
+body.dark .toggle-ball-container {
+  background-color: var(--bg-accent);
+}
+
+body.dark .toggle-ball {
+  background-color: #ffffff;
+  transform: translateX(15px); /* Moves the ball to the right for dark mode */
+}
+
+body.dark .toggle-text {
+  color: #e0e0e0;
 }
 
 .btn-border svg {
