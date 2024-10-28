@@ -83,7 +83,7 @@
 
           <!-- events navigation item -->
           <li>
-            <a href="#" class="nav-item">
+            <a href="#events" class="nav-item">
               <!-- expanded icon -->
               <svg
                 class="expanded-icon"
@@ -154,7 +154,7 @@
 
           <!-- speakers navigation item -->
           <li>
-            <a href="#" class="nav-item">
+            <a href="#speakers" class="nav-item">
               <!-- expanded icon -->
               <svg
                 class="expanded-icon"
@@ -205,7 +205,7 @@
 
           <!-- reports navigation item -->
           <li>
-            <a href="#" class="nav-item">
+            <a href="#reports" class="nav-item">
               <!-- expanded icon -->
               <svg
                 class="expanded-icon"
@@ -251,7 +251,7 @@
 
           <!-- notifications navigation item  with badge-->
           <li>
-            <a href="#" class="nav-item unread-notification">
+            <a href="#notifications" class="nav-item unread-notification">
               <!-- expanded icon -->
               <svg
                 class="expanded-icon"
@@ -299,7 +299,7 @@
 
           <!-- messages navigation item -->
           <li>
-            <a href="#" class="nav-item">
+            <a href="#messages" class="nav-item">
               <!-- expanded icon -->
               <svg
                 class="expanded-icon"
@@ -342,7 +342,7 @@
 
           <!-- settings navigation item -->
           <li>
-            <a href="#" class="nav-item">
+            <a href="#settings" class="nav-item">
               <!-- expanded icon -->
               <svg
                 class="expanded-icon"
@@ -439,7 +439,11 @@
 
           <li>
             <!-- collapsed icon -->
-            <button type="button" id="dark-mode-toggle" class="toggle-theme">
+            <button
+              type="button"
+              id="dark-mode-toggle"
+              class="toggle-theme btn-border"
+            >
               <svg
                 class="toggle-dark"
                 width="24"
@@ -451,7 +455,18 @@
                 <rect width="24" height="16" rx="8" fill="#E2E8F0" />
                 <rect x="2" y="2" width="12" height="12" rx="6" fill="white" />
               </svg>
-              <span class="nav-text">Dark Mode</span>
+              <svg
+                width="24"
+                height="16"
+                viewBox="0 0 24 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="24" height="16" rx="8" fill="#E2E8F0" />
+                <rect x="2" y="2" width="12" height="12" rx="6" fill="white" />
+              </svg>
+
+              Dark mode
             </button>
           </li>
 
@@ -490,7 +505,7 @@
     </header>
     <main>
       <!-- metrics summary -->
-      <section class="mx-container py-8 my-8">
+      <section class="mx-container py-8 my-8" id="metrics">
         <h2 id="metrics-heading">Welcome! here’s your summary</h2>
         <article class="metrics-card-container">
           <article class="metric-card">
@@ -852,7 +867,7 @@
             <span class="results-count">Displaying 100 results</span>
           </div>
           <div class="sort-section">
-            <span>Sort:</span>
+            <span class="sort-span">Sort:</span>
             <div type="button" class="filter-button">
               Most Recent
               <span>
@@ -931,7 +946,7 @@
             <tr>
               <td>Sustainable energy expos</td>
               <td>2020-03-26</td>
-              <td>Dr.Salauden w.o</td>
+              <td>Dr.Salaudeen w.o</td>
               <td>
                 <span class="status-badge status-completed">completed</span>
               </td>
@@ -1016,7 +1031,7 @@
             </div>
           </div>
           <div class="rows-per-page">
-            <span>Show:</span>
+            <span class="rows-span">Show:</span>
             <select class="rows-select">
               <option>10 rows</option>
               <option>20 rows</option>

@@ -7,6 +7,7 @@ import {
   Title,
   Tooltip,
   Legend,
+  Colors,
 } from "chart.js";
 
 // Register the required components
@@ -62,18 +63,35 @@ export function createMonthlyChart() {
         y: {
           beginAtZero: true,
           grid: {
-            display: true,
-            drawBorder: false,
-            color: "rgba(0, 0, 0, 0.1)",
+            drawTicks: false,
+            color: "#64748b",
+            drawOnChartArea: true,
           },
           ticks: {
             stepSize: 200,
+            color: "#64748b",
+          },
+
+          border: {
+            display: false,
+            dash: [3, 8],
           },
         },
         x: {
           grid: {
+            drawTicks: false,
+            color: "#64748b",
+            drawOnChartArea: true,
+          },
+
+          ticks: {
+            stepSize: 200,
+            color: "#64748b",
+          },
+
+          border: {
             display: false,
-            drawBorder: false,
+            dash: [3, 8],
           },
         },
       },
@@ -100,6 +118,19 @@ export function createMonthlyChart() {
   };
 
   return new Chart(ctx, config);
+}
+
+function updateChartColors(isDarkMode) {
+  const xAxisColor = isDarkMode ? "#64748b" : "#fffff";
+  const yAxisColor = isDarkMode ? "#64748b" : "#fffff";
+  const gridColor = isDarkMode ? "#64748b" : "#fffff";
+
+  createMonthlyChart.options.scales.x.ticks.color = xAxisColor;
+  createMonthlyChart.options.scales.y.ticks.color = yAxisColor;
+  createMonthlyChart.options.scales.x.grid.color = gridColor;
+  createMonthlyChart.options.scales.y.grid.color = gridColor;
+
+  createMonthlyChart.update();
 }
 
 export function imageSlider() {
