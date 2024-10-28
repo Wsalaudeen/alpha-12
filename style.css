@@ -64,21 +64,32 @@ svg {
   display: block;
   max-width: 100%;
 }
-.btn-border {
-  border: 1px solid red;
-  height: 50px;
-  width: 50px;
-  padding: 0;
-  display: flex;
-  justify-content: center;
+
+.collapse-container {
+  margin-block-start: 0.5rem;
+}
+.toggle-container {
+  display: inline-flex;
+  /* border: 1px solid red; */
+  margin-block-start: 0.5rem;
+  height: 32px;
   align-items: center;
+  justify-content: center;
+}
+
+.toggle-container button span {
+  margin-inline-start: 0.1rem;
 }
 
 .btn-border svg {
-  border: 0.5px dashed yellow;
+  display: block;
+  /* border: 2px dashed green; */
+  display: inline-flex;
+  margin-inline: 0.2rem;
+  margin-block-start: 0.25rem;
 }
 button {
-  /* display: inline-flex; */
+  display: inline-flex;
   /* border: 2px solid yellow; */
   background: none;
   padding: 0;
@@ -254,6 +265,7 @@ h6 {
   align-items: center;
   height: 3rem;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
+  margin-block-start: 0.5rem;
 
   &.user-info .user-email {
     color: var(--clr-email-primary-light);

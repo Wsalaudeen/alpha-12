@@ -395,113 +395,89 @@
               <span class="nav-text">Settings</span>
             </a>
           </li>
-
-          <!-- collapse icon -->
-          <li>
-            <button type="button" id="collapse-btn" class="collapse-btn">
-              <!-- expanded icon -->
-              <svg
-                class="expanded-icon"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.37498 7.29166L6.45831 10L9.37498 12.7083M13.5416 7.29166L10.625 10L13.5416 12.7083"
-                  stroke="#64748B"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <!-- collapsed icon -->
-              <svg
-                class="collapsed-icon"
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.4583 11.2917L13.375 14L10.4583 16.7083M14.625 11.2917L17.5416 14L14.625 16.7083"
-                  stroke="#64748B"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <span class="nav-text">Collapse</span>
-            </button>
-          </li>
-
-          <li>
-            <!-- collapsed icon -->
-            <button
-              type="button"
-              id="dark-mode-toggle"
-              class="toggle-theme btn-border"
-            >
-              <svg
-                class="toggle-dark"
-                width="24"
-                height="16"
-                viewBox="0 0 24 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="24" height="16" rx="8" fill="#E2E8F0" />
-                <rect x="2" y="2" width="12" height="12" rx="6" fill="white" />
-              </svg>
-              <svg
-                width="24"
-                height="16"
-                viewBox="0 0 24 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="24" height="16" rx="8" fill="#E2E8F0" />
-                <rect x="2" y="2" width="12" height="12" rx="6" fill="white" />
-              </svg>
-
-              Dark mode
-            </button>
-          </li>
-
-          <li>
-            <a href="#">
-              <!-- user info section -->
-              <div
-                class="user-info"
-                role="contentinfo"
-                aria-label="user profile information"
-              >
-                <img
-                  src="./Avatar.png"
-                  alt="user-avatar"
-                  class="expanded-icon"
-                />
-
-                <img
-                  src="./Avatar.svg"
-                  alt="user-avatar"
-                  class="collapsed-icon"
-                />
-                <div class="user-profile">
-                  <span class="user-name" aria-label="user name"
-                    >Rudra Devi</span
-                  >
-                  <span class="user-email" aria-label="user email address"
-                    >rudra.devi@gmail.com</span
-                  >
-                </div>
-              </div>
-            </a>
-          </li>
         </ul>
       </nav>
+
+      <!-- toggle-container -->
+      <div class="collapse-container">
+        <!-- collapse -->
+        <button type="button" id="collapse-btn" class="collapse-btn">
+          <!-- expanded icon -->
+          <svg
+            class="expanded-icon"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.37498 7.29166L6.45831 10L9.37498 12.7083M13.5416 7.29166L10.625 10L13.5416 12.7083"
+              stroke="#64748B"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <!-- collapsed icon -->
+          <svg
+            class="collapsed-icon"
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.4583 11.2917L13.375 14L10.4583 16.7083M14.625 11.2917L17.5416 14L14.625 16.7083"
+              stroke="#64748B"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span class="nav-text">Collapse</span>
+        </button>
+      </div>
+      <!-- toggle -->
+      <div class="toggle-container">
+        <button
+          type="button"
+          id="dark-mode-toggle"
+          class="toggle-theme btn-border"
+        >
+          <svg
+            class="toggle-dark"
+            width="24"
+            height="16"
+            viewBox="0 0 24 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="24" height="16" rx="8" fill="#E2E8F0" />
+            <rect x="2" y="2" width="12" height="12" rx="6" fill="white" />
+          </svg>
+          <span>Dark mode</span>
+        </button>
+      </div>
+
+      <!-- user info section -->
+
+      <div
+        class="user-info"
+        role="contentinfo"
+        aria-label="user profile information"
+      >
+        <img src="./Avatar.png" alt="user-avatar" class="expanded-icon" />
+
+        <img src="./Avatar.svg" alt="user-avatar" class="collapsed-icon" />
+        <div class="user-profile">
+          <span class="user-name" aria-label="user name">Rudra Devi</span>
+          <span class="user-email" aria-label="user email address"
+            >rudra.devi@gmail.com</span
+          >
+        </div>
+      </div>
     </header>
     <main>
       <!-- metrics summary -->
@@ -618,7 +594,7 @@
                     />
                   </svg>
                 </span>
-                5.0%
+                -5.0%
               </span>
             </div>
           </article>
